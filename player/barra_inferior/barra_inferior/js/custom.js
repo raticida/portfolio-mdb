@@ -9,7 +9,7 @@ $(document).ready(function() {
 	
 	function getFeedExame() {
 	
-		$.getJSON('http://localhost/exame/index.php', function($data) {
+		$.getJSON('http://portfolio-mdb.herokuapp.com/api/exame/', function($data) {
 	
 			link = $data.link;			
 
