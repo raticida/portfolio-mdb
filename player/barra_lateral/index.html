@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Barra Lateral</title>
+    <script src='barra_lateral/js/jquery.min.js'></script>
+    <script src='barra_lateral/js/moment.min.js'></script>
+    <script src='barra_lateral/js/pt-br.js'></script>
+    <script src="barra_lateral/js/owl.carousel.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="barra_lateral/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="barra_lateral/css/style.min.css" />
+</head>
+
+<body>
+    <div id="loading">
+        <img src="barra_lateral/img/loading_icon.gif" class="loading">
+    </div>
+    <div class="full-width" style="height: 72px;">
+        <img src="barra_lateral/img/logo-lastro.png" height="72">
+    </div>
+    <div class="owl-carousel owl-theme">
+        <div class="container">
+            <div class="full-width" style="height: 80px;">
+                <img src="barra_lateral/img/climatempo.png">
+            </div>
+            <div class="full-width">
+                <span class="nome"><img src="barra_lateral/img/pin_maker.png" class="pin-maker"><span id="cidade"></span></span>
+            </div>
+            <div class="full-width" style="padding-top: 20px">
+                <div class="icone">
+                    <img src="" id="icone" width="100">
+                </div>
+                <div class="temperatura">
+                    <span id="temperatura">
+							<img src="" width="100">
+						</span>
+                </div>
+                <span id="descricao"></span>
+            </div>
+            <div class="full-width" style="padding-top: 20px">
+                <div class="coluna">
+                    <div>
+                        <span class="titulo">Sensação</span>
+                        <span class="desc" id="sensacao"></span>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div>
+                        <span class="titulo">Umidade</span>
+                        <span class="desc" id="umidade"></span>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div>
+                        <span class="titulo">Pressão</span>
+                        <span class="desc" id="pressao"></span>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div>
+                        <span class="titulo">Vento</span>
+                        <span class="desc" id="vento"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="full-width" style="padding: 10px 0 10px 0;">
+                <span id="horario"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="full-width" style="height: 80px;">
+                <img src="barra_lateral/img/bovespa.png">
+            </div>
+            <div class="full-width">
+                <span class="nome full-width" style="line-height: 20px !important;">Ibovespa</span>
+                <span class="abreviacao">IBOV (INDEXBVMF)</span>
+            </div>
+            <div class="full-width" style="padding-top: 20px">
+                <span class="valor full-width" id="valor"></span>
+                <div style="padding: 20px 0 20px 0;">
+                    <img src="" id="iconeVariacao"><span class="variacao" id="indice"></span>
+                </div>
+            </div>
+            <div class="full-width" style="padding-top: 20px">
+                <span id="atualizacao"></span>
+            </div>
+            <div class="full-width" style="padding: 10px 0 10px 0;">
+                <span id="horario"></span>
+            </div>
+        </div>
+    </div>
+    <div class="full-width relogio">
+        <div>
+            <div>
+                <span id="hora"></span>
+            </div>
+            <div>
+                <span id="data"></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="barra_lateral/js/custom.js"></script>
+
+</html>
