@@ -29,7 +29,7 @@ $(document).ready(function() {
 		$.getJSON('http://portfolio-mdb.herokuapp.com/api/finance/', function($data) {
 
 			$("#valor").html($data.valor);
-			$("#atualizacao").html('Atualizado às: ' + $data.data);
+			$("#atualizacao").html('Atualizado: ' + $data.data);
 
 			if ($data.tipoVariacao == 'positivo') {
 			
