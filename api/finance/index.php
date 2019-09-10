@@ -29,7 +29,7 @@ if ($variavel > 0) {
 
 $data = date_create_from_format('M d\, g:i A T', $json['PriceUpdates']['0']['0']['3']);
 
-$nova_data = date_format($date,'d/m/Y \à\s G:i');
+$nova_data = date_format($data,'d/m/Y \à\s G:i');
 
 $resultado = new \stdClass();
 
