@@ -1,6 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-$url = 'https://www.google.com.br/async/finance_price_updates?ei=IWqPWvWJD8yEwgTzz5HoAg&yv=2&async=lang:pt-BR,country:br,rmids:%2Fm%2F04xjcr,_fmt:jspb'; //IBOVESPA
+$url = 'https://www.google.com.br/async/finance_price_updates?ei=IWqPWvWJD8yEwgTzz5HoAg&yv=2&async=lang:en-US,country:br,rmids:%2Fm%2F04xjcr,_fmt:jspb'; //IBOVESPA
 //$url = 'https://www.google.com.br/async/finance_price_updates?ei=RqGQWpm5HYL-wASnuY-IAw&yv=2&async=lang:pt-BR,country:br,rmids:%2Fm%2F02853rl,_fmt:jspb'; //NASDAQ
 
 $content = implode('', file($url));//
