@@ -27,7 +27,9 @@ if ($variavel > 0) {
 	$variavel = 'negativo';
 }
 
+$data = date_create_from_format('M d\, g:i A T', $json['PriceUpdates']['0']['0']['3']);
 
+$nova_data = date_format($date,'d/m/Y \à\s G:i');
 
 $resultado = new \stdClass();
 
@@ -35,12 +37,10 @@ $resultado->valor = $json['PriceUpdates']['0']['0']['1']['0'];
 $resultado->indice = $json['PriceUpdates']['0']['0']['1']['1'] .' ('.$json['PriceUpdates']['0']['0']['1']['2'].')';
 //$resultado->variacao = $json['PriceUpdates']['0']['0']['1']['2'];
 //$resultado->codigo = $json['PriceUpdates']['0']['0']['2'];
-$resultado->data = $json['PriceUpdates']['0']['0']['3'];
+$resultado->data = $nova_data;
 $resultado->tipo_variacao = $variavel;
 
 echo json_encode($resultado);
-
-
 
 ?>
 
