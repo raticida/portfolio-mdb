@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	function getClimaTempo() {
 	
-		$.getJSON('http://portfolio-mdb.herokuapp.com/api/clima_tempo/', function($data) {
+		$.getJSON('https://portfolio-mdb.herokuapp.com/api/clima_tempo/', function($data) {
 						
 			$("#cidade").html($data.cidade);
 			$("#temperatura").html($data.temperatura);
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 	function getFinance() {
 
-		$.getJSON('http://portfolio-mdb.herokuapp.com/api/finance/', function($data) {
+		$.getJSON('https://portfolio-mdb.herokuapp.com/api/finance/', function($data) {
 
 			$("#valor").html($data.valor);
 			$("#atualizacao").html('Atualizado: ' + $data.data);
