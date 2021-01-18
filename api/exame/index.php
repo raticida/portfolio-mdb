@@ -1,7 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 $url = 'https://exame.com/invest/feed/';
-echo $url;
 //$url = 'https://exame.abril.com.br/mercados/feed/';
 $xml = simplexml_load_file($url) or die("feed not loading");
 
